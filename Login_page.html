@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        
+        *{
+            font-family:poppins;
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login_box{
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            height: 540px;
+            width: 400px;
+        }form{
+            width: 70%;
+        }
+        input{
+            box-sizing: border-box;
+            padding: 0px 20px;
+            margin: 10px 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 50px;
+        }
+        .boxtex{
+            background-color:  rgba(217, 217, 217, 0.245);
+            border: none;
+            border-bottom: 4px solid rgb(195, 195, 195);
+        }
+        .boxtex:focus{
+            transition: 0.5s;
+            color: black;
+            outline: none;
+            box-sizing:border-box;
+            border: none;
+            border-bottom: 4px solid rgb(86, 26, 181);
+            
+        }
+        #submit{
+            background-color: rgb(41, 41, 41);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            border: 2px solid grey;
+            border-radius: 50px;
+        }
+        #submit:hover{
+            color: white;
+            background-color: rgb(97, 23, 217);
+            transition: 0.3s;
+            border: none;
+
+        }
+
+        #chbx{
+            width: 20px;
+            margin: 0px 5px 0px 0px;
+        }
+        label{
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="login_box">
+
+        <h1>LOGIN</h1>
+        <form>
+            <input type="text" id="username" class="boxtex" placeholder="Username">
+            <br>
+            <input type="email" id="mail" class="boxtex" placeholder="Email">
+            <input type="password" id="password"  class="boxtex"placeholder="Enter Password">
+            <br>
+            <label>
+                <input type="checkbox"id="chbx" name="checkbox"> Remember me
+            </label>
+            <input type="submit" id="submit" value="Submit">
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>
